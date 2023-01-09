@@ -1,0 +1,11 @@
+.App {
+  max-width: 800px;
+  margin: auto;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #024883;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  font-family: Roboto;
+}

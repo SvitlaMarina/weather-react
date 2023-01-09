@@ -2,7 +2,7 @@ import React from "react";
 import CurentData from "./CurentData";
 import EnterCity from "./EnterCity";
 
-//import "./css/Header.css";
+import "./css/Header.css";
 
 export default function Header() {
   return (
