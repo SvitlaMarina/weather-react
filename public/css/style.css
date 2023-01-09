@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Dosis:wght@300;400;700&family=Josefin+Sans:wght@200;400;700&family=Lato:wght@300;400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+  background-image: url("../images/sky.jpg");
+  padding: 10px;
+  font-family: Roboto;
+  animation-name: bg;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 30px;
+  }
+}
