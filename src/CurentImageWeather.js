@@ -1,5 +1,5 @@
 import React from "react";
-//import "./css/CurentImageWeather.css";
+import "./css/CurentImageWeather.css";
 export default function CurentImageWeather() {
   return (
     <div className="curent-img-weather">

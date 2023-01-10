@@ -1,5 +1,5 @@
 import React from "react";
-//import "./css/CityTemperature.css";
+import "./css/CityTemperature.css";
 export default function CityTemperature() {
   return (
     <div className="city-temperature">

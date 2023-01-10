@@ -1,0 +1,46 @@
+.city-temperature {
+  width: 99%;
+}
+.curent-city {
+  text-align: center;
+}
+.curent-temperature {
+  font-size: 60px;
+  color: #02325a;
+}
+.city-name {
+  font-size: 30px;
+  color: #02325a;
+  font-weight: 700;
+}
+.curent-city span {
+  margin-bottom: 0;
+}
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.units-link {
+  font-size: 16px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+.selectUnit {
+  font-size: 20px;
+  color: #024883;
+  font-weight: 700;
+}
+@media (min-width: 640px) {
+  .city-temperature {
+    width: 300px;
+  }
+  .curent-temperature {
+    display: block;
+    margin: 0 auto;
+  }
+  .curent-city {
+    width: 300px;
+  }
+}

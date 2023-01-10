@@ -1,0 +1,12 @@
+.curent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 640px) {
+  .curent {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}

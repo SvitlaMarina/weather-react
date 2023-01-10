@@ -1,0 +1,15 @@
+.about-day__list {
+  margin-top: 10px;
+}
+.about-day__list p {
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #024883;
+  font-weight: 700;
+}
+
+.header-day {
+  color: #0dcaf0;
+}
