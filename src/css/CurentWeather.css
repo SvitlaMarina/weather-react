@@ -4,9 +4,18 @@
   justify-content: center;
   margin-bottom: 40px;
 }
+.curent-img-weather {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
 @media (min-width: 640px) {
   .curent {
     flex-wrap: nowrap;
     justify-content: center;
+  }
+  .curent-img-weather {
+    width: none;
   }
 }
