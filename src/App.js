@@ -14,7 +14,8 @@ export default function App() {
           href="https://github.com/SvitlaMarina/weather-react"
           title="GitHub Marina Khristian"
           class="text-light"
-          target="_blank">
+          target="_blank"
+          rel="noreferrer">
           Marina Khrystyianyn
         </a>
       </p>
