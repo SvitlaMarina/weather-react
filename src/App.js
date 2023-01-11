@@ -8,6 +8,16 @@ export default function App() {
     <div className="App">
       <Header />
       <CurentWeather />
+      <p class="text-light text-center pb-3">
+        This project was coded by{" "}
+        <a
+          href="https://github.com/SvitlaMarina/weather-react"
+          title="GitHub Marina Khristian"
+          class="text-light"
+          target="_blank">
+          Marina Khrystyianyn
+        </a>
+      </p>
     </div>
   );
 }
