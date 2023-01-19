@@ -8,6 +8,8 @@ import CurentData from "./CurentData";
 export default function App() {
   let [city, setCity] = useState("Talske");
   let [weather, setWeather] = useState({ ready: false });
+  const key = `37febb05294o365efadt844fbb50ef35`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}`;
 
   function setCurrentWeather(response) {
     console.log(response.data);
@@ -32,9 +34,19 @@ export default function App() {
   function handelCityChange(event) {
     setCity(event.target.value);
   }
+  function handlePosition(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    console.log(lat);
+    console.log(lon);
+    apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${key}`;
+    search();
+  }
 
-  const key = `37febb05294o365efadt844fbb50ef35`;
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}`;
+  function curentCity() {
+    navigator.geolocation.getCurrentPosition(handlePosition);
+  }
+
   if (weather.ready) {
     return (
       <div className="App">
@@ -57,12 +69,12 @@ export default function App() {
                 id="submitCity"
                 value="Search"
               />
-              {/* <button
+              <button
                 type="button"
-                className="btn btn-outline-success border-info mb-2 m-1"
-                id="enterCurentCity">
+                onClick={curentCity}
+                className="btn btn-outline-success border-info mb-2 m-1">
                 Curent
-              </button> */}
+              </button>
             </form>
           </div>
         </div>

@@ -17,8 +17,13 @@
   margin-bottom: 0;
 }
 .units {
+  font-size: 16px;
   position: relative;
   top: -34px;
+  text-decoration: none;
+}
+.units a {
+  text-decoration: none;
 }
 
 .units-link {
