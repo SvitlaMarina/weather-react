@@ -5,6 +5,7 @@ import CurentWeather from "./CurentWeather";
 import Futter from "./Futter";
 import "bootstrap/dist/css/bootstrap.css";
 import CurentData from "./CurentData";
+import Forecast from "./Forecast";
 export default function App() {
   let [city, setCity] = useState("Talske");
   let [weather, setWeather] = useState({ ready: false });
@@ -79,6 +80,7 @@ export default function App() {
           </div>
         </div>
         <CurentWeather weather={weather} />
+        <Forecast city={weather.city} />
         <Futter />
       </div>
     );
