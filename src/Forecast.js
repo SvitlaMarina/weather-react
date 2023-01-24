@@ -9,7 +9,11 @@ export default function Forecast(props) {
   let [forecast, setForecast] = useState(null);
 
   function handleResponse(response) {
-    setForecast(response.data.daily);
+    let temp = [];
+    for (let i = 0; i < 5; i++) {
+      temp[i] = response.data.daily[i];
+    }
+    setForecast(temp);
     setLoaded(true);
   }
   useEffect(() => {
