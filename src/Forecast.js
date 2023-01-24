@@ -21,9 +21,7 @@ export default function Forecast(props) {
     return (
       <div className="card-group">
         {forecast.map(function (dailyForecast, index) {
-          if (index < 5) {
-            return <ForecastDay data={forecast[index]} />;
-          }
+          return <ForecastDay data={forecast[index]} />;
         })}
       </div>
     );

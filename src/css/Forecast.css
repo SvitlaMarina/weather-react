@@ -2,7 +2,11 @@
   text-align: center;
 }
 .max-temp {
+  color: rgb(195, 46, 5);
   font-weight: 700;
+}
+.min-temp {
+  color: rgb(27, 21, 116);
 }
 .card-img img {
   width: 55px;

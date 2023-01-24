@@ -23,7 +23,10 @@ export default function ForecastDay(props) {
           <img src={icon} alt="weather in current city" />
         </p>{" "}
         <p className="card-text">
-          <span className="max-temp">{temp.max}° </span>|{" "}
+          <span className="max-temp">
+            {temp.max}°{"  "} {"  "}{" "}
+          </span>
+          {"  "}
           <span className="min-temp"> {temp.min}°</span>{" "}
         </p>
       </div>
